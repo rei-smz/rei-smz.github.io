@@ -25,6 +25,5 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f prod_req.txt ]; then pip install -r prod_req.txt; fi
     - name: Build html
-      uses: rei-smz/rei-smz.github.io@master
       run: |
         python build.py
